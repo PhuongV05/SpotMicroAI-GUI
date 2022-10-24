@@ -101,8 +101,8 @@ rest_button = PushButton(app, text="Rest", command = rest_position, align="left"
 calibration_button = PushButton(app, text="Calibration", command = calibration_screen, align="bottom", height="5", width="fill")
 
 calibration_window = Window(app, title="Calibration Screen", height=320, width=480, visible=False)
-motor_window = Window(calibration_window, height=320, width=480, visible=False)
 motor_button = ButtonGroup(calibration_window, options = [["rear_shoulder_left", "1"], ["rear_leg_left", "2"], ["rear_feet_left", "3"], ["rear_shoulder_right", "4"], ["rear_leg_right", "5"], ["rear_feet_right", "6"], ["front_shoulder_left", "7"], ["front_leg_left", "8"], ["front_feet_left", "9"], ["front_shoulder_right", "10"], ["front_leg_right", "11"], ["front_feet_right", "12"]], command=open_calibration)
+motor_window = Window(calibration_window, height=320, width=480, visible=False)
 max_pulse_text = Text(motor_window, text="Enter maximum pulse width: ")
 max_pulse = TextBox(motor_window, text = "")
 min_pulse_text = Text(motor_window, text="Enter minimum pulse width: ")
